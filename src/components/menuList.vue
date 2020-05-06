@@ -140,14 +140,18 @@ export default {
             let url = window.location.pathname;
             this.active_router = url;
             //消除样式  (transform)
-            document.getElementById("list1").style.removeProperty("position");
+             document.getElementById("list1").style.removeProperty("position");
+            document.getElementById("list1").style.removeProperty("transform");
             document.getElementById("list2").style.removeProperty("position");
+            document.getElementById("list2").style.removeProperty("transform");
         },
         changeTitle(value) {
             console.log(value);
             this.showtitle = value;
-            document.getElementById("list1").style.removeProperty("position");
+             document.getElementById("list1").style.removeProperty("position");
+            document.getElementById("list1").style.removeProperty("transform");
             document.getElementById("list2").style.removeProperty("position");
+            document.getElementById("list2").style.removeProperty("transform");
         },
     },
 };
